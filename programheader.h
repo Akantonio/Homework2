@@ -7,14 +7,17 @@
 
 #include<iostream>
 #include<string>
+#include<list>
 
 struct buildingValue{
+    int identification;
     int value;
     std::string name;
     double length;
     double width;
     double height;
 };
+
 
 void to_lower(char * s);
 

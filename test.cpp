@@ -5,7 +5,7 @@
 #include "catch.hpp"
 #include "programheader.h"
 
-
+std::list<buildingValue> buildingList(10);
 
 TEST_CASE("Struct Value"){
     SECTION("Queue:First-in First-out"){
@@ -22,7 +22,13 @@ TEST_CASE("Struct Value"){
     }
 }
 TEST_CASE("Lower Case letters"){
+
     char sentence[]= "THIS IS ALL CAPITAL";
+    char correct[]="this is all capital";
     to_lower(sentence);
-    REQUIRE(sentence=="this is all capital");
+    REQUIRE(sentence==correct);
+
+    char helloSentence[]= "Hello, World!";
+    to_lower(helloSentence);
+    REQUIRE(helloSentence=="hello, world!");
 }
