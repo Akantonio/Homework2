@@ -21,3 +21,8 @@ TEST_CASE("Struct Value"){
 
     }
 }
+TEST_CASE("Lower Case letters"){
+    char sentence[]= "THIS IS ALL CAPITAL";
+    to_lower(sentence);
+    REQUIRE(sentence=="this is all capital");
+}

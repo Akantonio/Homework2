@@ -16,5 +16,6 @@ struct buildingValue{
     double height;
 };
 
+void to_lower(char * s);
 
 #endif //HOMEWORK2_PROGRAMHEADER_H
