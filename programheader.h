@@ -12,7 +12,7 @@
 struct buildingValue{
     int identification;
     int value;
-    std::string name;
+    std::string name="default";
     double length;
     double width;
     double height;
@@ -20,5 +20,6 @@ struct buildingValue{
 
 
 void to_lower(char * s);
+void toPrintList(std::list<buildingValue> & storedBuild);
 
 #endif //HOMEWORK2_PROGRAMHEADER_H

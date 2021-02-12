@@ -18,7 +18,7 @@ TEST_CASE("Struct Value"){
 
     }
     SECTION("Print the list out"){
-
+    toPrintList(buildingList);
     }
 }
 TEST_CASE("Lower Case letters"){

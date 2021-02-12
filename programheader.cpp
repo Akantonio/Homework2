@@ -4,6 +4,14 @@
 
 #include "programheader.h"
 
+
+void toPrintList(std::list<buildingValue> & storedBuild){
+    std::list <buildingValue> :: iterator it;
+    for(it = storedBuild.begin(); it != storedBuild.end(); ++it)
+        std::cout << '\t' << it->name;
+    std::cout << '\n';
+}
+
 void to_lower(char* s){
     while(*s != '\0'){
         if(*s>= 'A' && *s<= 'Z'){
