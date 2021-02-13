@@ -39,7 +39,7 @@ TEST_CASE("Struct Value"){
         REQUIRE("ForLoop"==check);
     }
     SECTION("Insert and Find"){
-
+        REQUIRE(toSearch(buildingList,"Fox"));
     }
     SECTION("Print the list out"){
         toPrintList(buildingList);
