@@ -39,7 +39,10 @@ TEST_CASE("Struct Value"){
         REQUIRE("ForLoop"==check);
     }
     SECTION("Insert and Find"){
-        REQUIRE(toSearch(buildingList,"Fox"));
+        buildingList.push_back(buildingValue{17,1300,"Truffle"});
+        std::string s="Truffle";
+        buildingList.pop_front();
+        REQUIRE(toSearchName(buildingList,s));
     }
     SECTION("Print the list out"){
         toPrintList(buildingList);

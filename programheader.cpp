@@ -25,10 +25,13 @@ void toPrintList(std::list<buildingValue> & storedBuild){
 
 }
 
-bool toSearch(std::list<buildingValue> & storedBuild,auto & searchParameters){
+bool toSearchName(std::list<buildingValue> & storedBuild,std::string & searchParameters){
     std::list<buildingValue> :: iterator it;
     for(it=storedBuild.begin();it!=storedBuild.end();++it){
-        if(it->name==searchParameters){
+        std::string temp= it->name;
+        std::cout<< temp <<std::endl;
+
+        if(temp==searchParameters){
             return true;
         }
     }
