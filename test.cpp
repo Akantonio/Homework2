@@ -5,27 +5,40 @@
 #include "catch.hpp"
 #include "programheader.h"
 
-std::list<buildingValue> buildingList(5);
+
 
 TEST_CASE("Struct Value"){
+
+    std::list<buildingValue> buildingList(5); //Initializing a list of buildingValues.
     toPrintList(buildingList);
     for(int i=0; i<5;++i ){
         buildingList.push_back(buildingValue{i,200,"ForLoop"});
         buildingList.pop_front();
     }
     SECTION("Queue:First-in First-out"){
-        buildingList.push_back(buildingValue{11,2000,"Fox"});
+        buildingList.push_back(buildingValue{11,234,"Fox"});
         buildingList.pop_front();
+        auto it = buildingList.back();
+
         std::string check;
+        check = it.name;
+
         REQUIRE("Fox" == check);
     }
     SECTION("Stack:Last-in First Out"){
         buildingList.push_back(buildingValue{17,1300,"Truffle"});
-        toPrintList(buildingList);
         buildingList.pop_back();
+        auto it= buildingList.back();
+
+        int checkInt= it.identification;
+        std::string check;
+        check = it.name;
+        REQUIRE(checkInt== 4);
+        REQUIRE("ForLoop"==check);
     }
     SECTION("Insert and Find"){
-        std::list<buildingValue>::iterator it = buildingList.begin();
+
+
     }
     SECTION("Print the list out"){
         toPrintList(buildingList);
