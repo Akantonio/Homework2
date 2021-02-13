@@ -5,6 +5,17 @@
 #include "programheader.h"
 
 
+
+
+void to_lower(char* s){
+    while(*s != '\0'){
+        if(*s>= 'A' && *s<= 'Z'){
+                *s += 32;
+        }
+        s++;
+    }
+}
+
 void toPrintList(std::list<buildingValue> & storedBuild){
     std::list <buildingValue> :: iterator it;
     for(it = storedBuild.begin(); it != storedBuild.end(); ++it) {
@@ -14,11 +25,9 @@ void toPrintList(std::list<buildingValue> & storedBuild){
 
 }
 
-void to_lower(char* s){
-    while(*s != '\0'){
-        if(*s>= 'A' && *s<= 'Z'){
-                *s += 32;
-        }
-        s++;
+void toSearch(std::list<buildingValue> & storedBuild,auto & searchParameters){
+    std::list<buildingValue> :: iterator it;
+    for(it=storedBuild.begin();it!=storedBuild.end();++it){
+
     }
 }

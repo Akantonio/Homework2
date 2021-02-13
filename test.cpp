@@ -11,7 +11,6 @@
 TEST_CASE("Struct Value"){
 
     std::list<buildingValue> buildingList(5); //Initializing a list of buildingValues.
-    toPrintList(buildingList);
     for(int i=0; i<5;++i ){
         buildingList.push_back(buildingValue{i,200,"ForLoop"});
         buildingList.pop_front();
@@ -19,6 +18,7 @@ TEST_CASE("Struct Value"){
     SECTION("Queue:First-in First-out"){
         buildingList.push_back(buildingValue{11,234,"Fox"});
         buildingList.pop_front();
+        toPrintList(buildingList);
         auto it = buildingList.back();
 
         std::string check;
@@ -29,6 +29,7 @@ TEST_CASE("Struct Value"){
     SECTION("Stack:Last-in First Out"){
         buildingList.push_back(buildingValue{17,1300,"Truffle"});
         buildingList.pop_back();
+        toPrintList(buildingList);
         auto it= buildingList.back();
 
         int checkInt= it.identification;
@@ -38,7 +39,6 @@ TEST_CASE("Struct Value"){
         REQUIRE("ForLoop"==check);
     }
     SECTION("Insert and Find"){
-
 
     }
     SECTION("Print the list out"){

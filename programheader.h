@@ -21,5 +21,6 @@ struct buildingValue{
 
 void to_lower(char * s);
 void toPrintList(std::list<buildingValue> & storedBuild);
+void toSearch(std::list<buildingValue> & storedBuild);
 
 #endif //HOMEWORK2_PROGRAMHEADER_H
