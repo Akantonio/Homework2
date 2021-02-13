@@ -3,17 +3,17 @@
 //
 #include "memoryLay.h"
 
-void printPointer(int i){
+void printPointer(int &i){
     int* iptr= &i;
     //the unary * operator dereferences the pointer
-    std::cout<< "i = "<< iptr<<"\n";
-    std::cout<< "&i = " <<iptr <<"\n";
+    std::cout<< "i = "<< i <<"\n";
+    std::cout<< "&i = " << iptr <<"\n";
 }
 
 void memoryLayout(){
-     int num1=0;
-     int num2=0;
-     int num3=0;\
+     int num1=1;
+     int num2=2;
+     int num3=3;
      printPointer(num1);
      printPointer(num2);
      printPointer(num3);

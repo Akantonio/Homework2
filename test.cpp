@@ -4,6 +4,7 @@
 
 #include "catch.hpp"
 #include "programheader.h"
+#include "memoryLay.h"
 
 
 
@@ -37,10 +38,7 @@ TEST_CASE("Struct Value"){
         REQUIRE("ForLoop"==check);
     }
     SECTION("Insert and Find"){
-        auto it= std::find(buildingList.begin(),buildingList.end(),"ForLoop");
-        if(it != buildingList.end()){
 
-        }
 
     }
     SECTION("Print the list out"){
@@ -58,4 +56,8 @@ TEST_CASE("Lower Case letters"){
     char cHelloS[] ="hello, world!";
     to_lower(helloSentence);
     REQUIRE(*helloSentence==*cHelloS);
+}
+
+TEST_CASE("Memory Allocation"){
+    memoryLayout();
 }

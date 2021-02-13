@@ -7,6 +7,7 @@
 
 #include<iostream>
 
-void printPointer(int i);
+void printPointer(int& i);
+void memoryLayout();
 
 #endif //HOMEWORK2_MEMORYLAY_H
