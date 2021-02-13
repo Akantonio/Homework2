@@ -12,7 +12,7 @@
 struct buildingValue{
     int identification;
     int value;
-    std::string name="default";
+    std::string name="Default";
     double length;
     double width;
     double height;

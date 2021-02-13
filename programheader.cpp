@@ -7,9 +7,11 @@
 
 void toPrintList(std::list<buildingValue> & storedBuild){
     std::list <buildingValue> :: iterator it;
-    for(it = storedBuild.begin(); it != storedBuild.end(); ++it)
-        std::cout << '\t' << it->name;
+    for(it = storedBuild.begin(); it != storedBuild.end(); ++it) {
+        std::cout << it->identification << it->name << it->value<<'\t' ;
+    }
     std::cout << '\n';
+
 }
 
 void to_lower(char* s){
