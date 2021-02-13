@@ -37,7 +37,10 @@ TEST_CASE("Struct Value"){
         REQUIRE("ForLoop"==check);
     }
     SECTION("Insert and Find"){
+        auto it= std::find(buildingList.begin(),buildingList.end(),"ForLoop");
+        if(it != buildingList.end()){
 
+        }
 
     }
     SECTION("Print the list out"){
