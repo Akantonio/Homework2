@@ -3,4 +3,4 @@ project(Homework2)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(Homework2 main.cpp test.cpp programheader.h programheader.cpp)
+add_executable(Homework2 main.cpp test.cpp programheader.h programheader.cpp memoryLay.h memoryLay.cpp)
