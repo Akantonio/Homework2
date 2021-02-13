@@ -8,7 +8,7 @@
 void toPrintList(std::list<buildingValue> & storedBuild){
     std::list <buildingValue> :: iterator it;
     for(it = storedBuild.begin(); it != storedBuild.end(); ++it) {
-        std::cout << it->identification << it->name << it->value<<'\t' ;
+        std::cout << it->identification << " "<< it->value<< " "<< it->name <<" "<<  it->length <<" "<< it->width <<" "<< it->height << '\t' ;
     }
     std::cout << '\n';
 
