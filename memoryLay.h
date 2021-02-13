@@ -5,4 +5,8 @@
 #ifndef HOMEWORK2_MEMORYLAY_H
 #define HOMEWORK2_MEMORYLAY_H
 
+#include<iostream>
+
+void printPointer(int i);
+
 #endif //HOMEWORK2_MEMORYLAY_H
